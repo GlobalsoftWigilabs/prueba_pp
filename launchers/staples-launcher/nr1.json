@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "staples-launcher",
+    "displayName": "Staples PP",
+    "description": "Describe me",
+    "rootNerdletId": "staples-nerdlet"
+}

@@ -1,0 +1,23 @@
+@import "./containers/MainContainer/styles.scss";
+@import "./containers/StepContainer/styles.scss";
+@import "./components/Header/styles.scss";
+@import "./components/Stage/style.scss";
+@import "./components/Step/style.scss";
+@import "./components/TouchPoint/styles.scss";
+@import "./components/Arrow/styless.scss";
+@import "./components/ModalTouchPoint/styles.scss";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import "../../node_modules/react-datepicker/dist/react-datepicker.css";
+
+.modal-dialog {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  position: relative;
+}
+.modal-backdrop {
+  background: rgba(51, 51, 51, 0.6);
+}
+.modal-backdrop-menu {
+  background: rgba(6, 201, 250, 0.6);
+}

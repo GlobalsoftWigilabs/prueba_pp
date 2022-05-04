@@ -1,0 +1,254 @@
+.react-datepicker-ignore-onclickoutside {
+  width: 202px !important;
+}
+
+.react-datepicker__input-container {
+  width: 202px !important;
+}
+
+.wrapperMoque {
+  display: flex;
+  //grid-template-columns: 210px 210px;
+  grid-gap: 5px;
+  background-color: #fff;
+  width: 210px;
+  //color: #444;
+  //padding-top: 200px;
+  //height: 900px;
+}
+
+.holiboli {
+  display: flex !important;
+  padding-left: 1200px;
+  height: 200px;
+}
+
+.holiboli .modal-dialog {
+  justify-content: flex-end;
+  padding-right: 70px;
+  padding-bottom: 120px;
+}
+
+.mainColumn {
+  width: 33.3%;
+}
+.stepColumn {
+  display: grid;
+  height: 88%;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template: 60px 1fr / 100%;
+  &div:nth-of-type(2) {
+    display: flex;
+  }
+}
+
+.cashStage {
+  margin-right: 15px;
+}
+
+.moneyStageHistoryError {
+  display: flex;
+  margin-left: 5%;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #40007c;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template: 30px 1fr / 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.3%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5%;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-family: Open Sans;
+  text-transform: capitalize;
+  font-weight: normal;
+  &__step {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    font-style: normal;
+    font-size: 1.6rem;
+    font-family: Open Sans;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+}
+.titleCnt {
+   
+  align-items: center;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-family: Open Sans;
+  text-transform: capitalize;
+  font-weight: normal;
+  &__step {
+     align-items: center;
+     font-style: normal;
+    font-size: 1.6rem;
+    font-family: Open Sans;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+}
+.moneyStage {
+  display: flex;
+  margin-left: 5%;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #40007c;
+  width: 90%;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  margin-top: 1%;
+}
+.selectIcon {
+  cursor: pointer;
+}
+
+.containModal {
+  display: grid;
+  grid-template: 10% 90% / 1fr;
+  height: 100%;
+}
+.headerModal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleModal {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 10px;
+}
+.bodySubTitle{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+.inputText{
+  width: 100px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+.sizeIconMedal {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-right: 5px;
+}
+.sizeIconStart {
+  width: 1.2vw;
+  height: 1.2vw;
+  margin-right: 5px;
+}
+
+.touchPointCheckbox {
+  margin-left: 25px;
+  padding: 8px 0px 0px 0px;
+}
+
+.checkboxLabel {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+  color: silver !important;
+  text-transform: lowercase;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+//spinner
+#cover-spin {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 255, 0.7);
+  z-index: 999;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cover-spin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+}
+
+// Font size for screen of 14"
+@media screen and (max-width: 1366px) {
+  .sizeIconStart {
+    margin-right: 11px;
+  }
+  .sizeIconMedal {
+    margin-right: 11px;
+  }
+  .title {
+    font-size: 1.6rem;
+    &__step {
+      font-size: 1.6rem;
+    }
+  }
+  .moneyStage {
+    font-size: 14px;
+  }
+
+  .holiboli {
+    padding-left: 1000px;
+  }
+}
